@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="index.js" type="text/javascript" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+    h1{
+        display: flex;
+            justify-content: center; /* Horizontal centering */
+            align-items:center;    /* Vertical centering */
+            height: 100vh;          /* Full viewport height */
+            margin: 0;
+    }
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+#app{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns, each taking an equal fraction of the available space */
+            grid-template-rows: repeat(4, 1fr
+            ); /* 4 rows, each taking an equal fraction of the available space */
+            gap: 10px; 
+}
+
+#app div:nth-child(even){
+    gap: 30px;
+    background-color: blue;
+}
+
+#app div:nth-child(odd){
+    background-color: rgb(11, 222, 32);
+}
+
+</style>
+
+<body>
+
+    <input id="fname" type="text">
+    <div id ='app'>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+    <!-- <header>
+        <nav class="navbar">
+            <div class="brand-title">Brand</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
+    <h1 id="watch" class="clickable">Hello World</h1>
+  
+</body>
+<script defer>
+    document.getElementById("fname").addEventListener("keyup", myFunction);
+   
+   function myFunction() {
+     let x = document.getElementsByClassName("clickable");
+     
+     for (let i = 0; i < x.length; i++) {
+        x[i].innerHTML = `Modified Content ${i + 1}`;
+    }
+   }
+   </script>
+<!-- <script>
+//     document.getElementById('text').addEventListener('click', function() {
+//      // Array of names to cycle through
+//      var names = ['Neha', 'Khushi', 'Nidhi', 'Ashta'];
+
+// // Get the current text content
+// var currentText = this.textContent;
+
+// // Find the index of the current text in the names array
+// var currentIndex = names.indexOf(currentText);
+
+// if (currentIndex !== -1) {
+//         // Increment the index (with wrapping around to the start if necessary)
+//         var nextIndex = (currentIndex + 1) % names.length;
+// console.log('nextIndex',nextIndex);
+//         // Set the new text content
+//         this.textContent = names[nextIndex];
+//     }
+//     else{
+//         this.textContent = names[0];
+//     }
+//     });
+</script> -->
+
+</html>

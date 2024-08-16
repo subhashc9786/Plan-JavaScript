@@ -2,13 +2,16 @@
 
 // WAY TO CREATE OBJECT IN JAVASCRIPT
 
+// 1
+// Object literls
+
 // const person = {
 //     name: 'John',
 //     age: 30,
 //     gender: 'male'
 // };
 
-
+// 2
 // CONSTRUCTOR FUNCTION
 
 // function Person(name, age, gender) {
@@ -18,11 +21,14 @@
 // }
 
 // const person = new Person('John', 30, 'male');
+// console.log(person);
 
 
 
+// 3
 
 //Object.create():
+
 // const personPrototype = {
 //     greeting: function() {
 //         return `Hello, my name is ${this.name}.`;
@@ -33,9 +39,10 @@
 // person.name = 'John';
 // person.age = 30;
 // person.gender = 'male';
+// console.log(person.greeting());
 
 
-
+// 4
 
 // USING ES6 CLASSES
 
@@ -55,6 +62,7 @@
 
 // console.log(person.greeting());
 
+// 5
 
 //Using Object.assign():
 
@@ -63,31 +71,35 @@
 //     age:30
 // }
 
+
+// Expected output: true
+
 // const target = {};
 
-// Object.assign(target,source);
+// Object.assign( target,source);
 // console.log(target);
 
+// const target = { a: 1, b: 2 };
+// const source = { b: 4, c: 5 };
+
+// const returnedTarget = Object.assign(target, source);
+
+// console.log(target);
+// // Expected output: Object { a: 1, b: 4, c: 5 }
+
+// console.log(returnedTarget === target);
 
 
+// 6
+// new Object method
 
-// function Person(name, age, gender) {
-//     console.log(name);
-//     this.name = '';
-//     this.age = age;
-//     this.gender = gender;
-// }
+// const person = new Object();
+// person.name = 'John';
+// person.age = 30;
+// person.isEmployed = true;
 
-// const person = new Person('John', 30, 'male');
-// console.log(person);
-// sum = 10;
-// var sum = 20;
-// var sum = 30;
-// console.log(sum);
+// console.log(person);      
 
-// class React {
-//     constructor.
-// }
 
 
 
@@ -124,3 +136,42 @@
 // }
 
 // console.log(person.fullName.call(person1,"banglore",32));
+
+
+
+
+//Freeze  Specfic Property of Object
+
+
+// const person = {
+//     name: 'Alice',
+//     age: 30
+// };
+
+// // Freeze the 'age' property
+// Object.defineProperty(person, 'age', {
+//     writable: false,
+//     configurable: false
+// });
+
+// //
+// person.age = 35;
+// console.log(person.age); // Output: 30
+
+
+// delete person.age;
+// console.log(person.age);
+
+
+// person.name = 'Bob';
+// console.log(person.name);
+
+
+let newobj = {fullname:'subhash',lastname:{lastname:"sonu"}};
+
+const deepcopy = JSON.parse(JSON.stringify(newobj))
+console.log(deepcopy);
+
+newobj.fullname = 'gsdfsfd';
+console.log(newobj);
+
