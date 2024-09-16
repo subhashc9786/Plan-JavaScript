@@ -226,8 +226,184 @@
 
 // greeks[greeks.length]="Geeks5";
 
-
 // console.log(greeks);
+
+
+
+// const language = new Array("HTML","Css","JAVASCRIPT");
+// console.log(language.length);
+// console.log(language[0]);
+// console.log(language[1]);
+// console.log(language[2]);
+
+
+// JavaScript Array Reference
+
+
+// let myArr = Array.from("GreeksForGreeks");
+
+// console.log(myArr);
+
+// let newarr= Array.from("This is not my responablity");
+
+// console.log(newarr);
+
+
+
+// let specialValueArray = Array.of(undefined,null,NaN,Infinity);
+// console.log(specialValueArra);
+// let arr = Array.of(7);
+// console.log(arr);
+
+
+
+// const arr = [45,32,69,21];
+// const index = 3;
+// console.log(arr.at(index));
+
+// let array = [1,2,3,4,5,6,7];
+
+// console.log("Array",array.copyWithin(0,3,5));
+
+
+
+//let languages  = ["HTML","CSS","JavaScript","ReactJS"];
+// let g  = languages.entries();
+// console.log(g);
+
+
+
+// function ispostive(element,index,array){
+//     return element>0;
+// }
+
+// function func(){
+//     let arr = [11,89,23,7,98];
+
+//     let value = arr.every(ispostive);
+//     console.log(value);
+    
+// }
+
+// func();
+
+
+
+// let array = [1,2,3,4];
+// console.log(array.fill(6));
+
+
+// let array = [10,20,30,40,50];
+// let found = array.find(function (element){
+//     return element>20;
+// })
+// console.log(found);
+
+
+// function isOdd(element,index,array){
+//    return (element %2 ==1);
+// }
+// console.log(([4,6,8,3,12].findIndex(isOdd)));
+
+
+
+
+// function canVote(age){
+//     return age >=18;
+// }
+// function func(){
+//     let filtered = [24,33,16,40].filter(canVote);
+//     console.log(filtered);  
+// }
+// func();
+
+
+// let arr = [1,2,3,,4];
+// let newArr = arr.flat();
+// console.log(newArr);
+
+
+// const sentences =["Hello World","How are you?","JavaScript is fun"];
+// const words = sentences.flatMap(sentences=>sentences.split(' '));
+// console.log(words);
+
+
+
+// let A = [1,2,3,4,5,6];
+// arr = A.indexOf(6);
+// console.log(arr);
+
+
+// let A = ['Ram','Z','K','Greeksforgreeks'];
+// let iterator = A.values();
+// console.log(iterator.next());
+// console.log(iterator.next());
+// console.log(iterator.next());
+
+
+
+
+
+// 
+
+
+
+// const arr = [...new Array(5)]
+// console.log(arr);
+
+// const arr = [1,2,3,4,5];
+
+// var newData =Array.apply(null,Array(6)).map(function () { })
+
+// console.log(newData);
+
+
+// let arr = ['html','react js','javascript','html','react js'];
+
+
+// function removeDuplicates(arr){
+//     let unique = arr.reduce((acc,curr)=>{
+//         if(!acc.includes(curr))
+//             acc.push(curr)
+//         return acc;
+
+//     },[])
+//     return unique;
+// }
+
+// console.log(removeDuplicates(arr));
+
+
+
+
+
+
+
+
+
+// Bubble sort
+// function arrayShorting(arr){
+   
+//     for(let i = 0; i <arr.length;i++){
+//         for(let j = 0;j<(arr.length-i-1);j++){
+
+//             if(arr[j]<arr[j+1]){
+//                 let temp = arr[j];
+//                 arr[j]=arr[j+1];
+//                 arr[j+1] =temp;
+//             }
+//         }
+//     }
+//     return arr;
+
+
+// }
+
+// console.log(arrayShorting([5,3,1,8]));
+
+
+
+
 
 
 

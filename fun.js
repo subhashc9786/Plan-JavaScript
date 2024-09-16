@@ -1,4 +1,3 @@
-
 // function pairsum(array, target) {
 //     const pairs = [];
 //     const hashmap = {}
@@ -20,10 +19,6 @@
 
 // console.log(pairsum(array, target));
 
-
-
-
-
 // Write Polyfill for map;
 
 // const arr = [1,2,3,4,5,6];
@@ -43,8 +38,6 @@
 // })
 
 // console.log(newArray);
-
-
 
 // const arr = [1,2,[3,4,5],[6,7,8,9],10]
 
@@ -66,7 +59,6 @@
 // const b = [1,2,3,4,5,6];
 
 // output = a1bc23def456
-
 
 // function mergeArrays(arr1, arr2) {
 //     let result = '';
@@ -91,11 +83,6 @@
 // const b = [1, 2, 3, 4, 5, 6];
 // const output = mergeArrays(a, b);
 // console.log( output); // Output: a1bc23def456
-
-
-
-
-
 
 // function runLoopForDuration(duration) {
 //     let startTime = Date.now();
@@ -123,17 +110,11 @@
 // // Run the loop for 2 seconds (2000 milliseconds)
 // runLoopForDuration(2000);
 
-
-
-
 // function isPalindrome(str) {
 //     return str === str.split('').reverse().join('');
 //   }
 
 //   console.log(isPalindrome('tut'))
-
-
-
 
 // function reverseString(str){
 // return str.split('').reverse().join('');
@@ -141,16 +122,12 @@
 
 // console.log(reverseString('funny'));
 
-
-
 // function filterEvenNumbers(numbers){
 //     return numbers.filter(num=> num%2 ===0);
 
 // }
 
 // console.log(filterEvenNumbers([1,2,3,4]));
-
-
 
 // Calculate the factorial a given Number;
 
@@ -165,10 +142,6 @@
 
 // console.log(factorial(3));
 
-
-
-
-
 // function isPrime(num) {
 
 //     if (num <= 1) return false;
@@ -182,17 +155,14 @@
 
 //   console.log(isPrime(9,2,3,4,));
 
-
-
-// Custom Flat array function 
-
+// Custom Flat array function
 
 // function flatten(arr) {
 //     let newArr = [];
 //     for (let i = 0; i < arr.length; i++) {
 //         if (Array.isArray(arr[i])) {
 //             newArr = newArr.concat(flatten(arr[i]))
-          
+
 //         } else {
 //           newArr.push(arr[i]);
 //         }
@@ -215,7 +185,6 @@
 //   console.log(randomInteger(1,5));
 //   console.log(randomInteger(1,5));
 
-
 // find the logest substring in any string
 
 // const str = 'javascript is using for frontend as well backenddevelopment';
@@ -229,10 +198,6 @@
 // }
 
 // console.log(MaxStrLen(str));
-
-
-
- 
 
 // generate String according to output
 
@@ -256,10 +221,7 @@
 
 // console.log(generateHash("my name is subhash"));
 
-
-
-
-// find total given charactor total repeatation 
+// find total given charactor total repeatation
 
 // const countChar = (word,char)=>{
 //     word = word.toLowerCase();
@@ -276,12 +238,7 @@
 
 // console.log(countChar('MissIssippi',"I"));
 
-
-
-
 // Write a functions checkTriangleType that takes threee parameters
-
-
 
 // function countSubstring(str){
 // const newarr = str.split(" ");
@@ -313,10 +270,8 @@
 //         k = (k*(i-j))/j;
 //     }
 //     console.log(line);
-    
+
 // }
-
-
 
 // let n1 = 0;
 // let n2 = 1;
@@ -327,14 +282,13 @@
 //     nextTerm = n1+n1;
 //     n1 = n2;
 //     n2 = nextTerm;
-    
+
 // }
 
 // function indianHacker(a,b,...arr){
 // console.log(typeof this);
 
 //     console.log(a,b,...arr);
-    
 
 // }
 
@@ -345,7 +299,6 @@
 // var navigatpor;
 // console.log(Element.style);
 
-
 // function shuffleArray(array){
 //     return array.sort(()=> Math.random()-0.5)
 // }
@@ -354,5 +307,50 @@
 
 // console.log(3%2);
 
+// 👉👉// call() ,appy(),bind() in javascript
 
+// function sayHello(greeting){
+//     console.log(greeting+' '+this.name);
 
+// }
+// const person = {name:'Jhon'};
+// sayHello.call(person,"Hello");
+// sayHello.apply(person,['Hello Shubhash'])
+
+// const sayHelloToJohn = sayHello.bind(person);
+// sayHelloToJohn('Hello');
+
+// 👉👉Prototypes in JavaScript?
+
+// function Person(name){
+//     this.name = name;
+// }
+
+// Person.prototype.greet = function(){
+//     console.log("Hello,my name is"+ this.name);
+
+// }
+// const person1  = new Person("Alice");
+// const person2 = new Person("Bob");
+// person1.greet();
+// person2.greet();
+
+// var add = function(a,b){
+//     // console.log(a+b);
+//     return a+b;
+// }
+
+// console.log(add(1,4));
+console.log("first");
+
+setTimeout(() => {
+  console.log(`This will be executed after 1000 milliseconds`);
+}, 1000);
+
+console.log("DD");
+
+setImmediate(() => {
+  console.log(`This is Immediate`);
+});
+
+console.log("final");

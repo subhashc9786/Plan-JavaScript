@@ -596,3 +596,97 @@
 // const paramValue = url.searchParams.get("paramName");
 
 // console.log(paramValue);
+
+// class Animal {
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     getInfo(){
+//         return(
+//             `The name of the animal is ${this.name} and age is ${this.age}`
+//         )
+//     }
+// }
+
+// class Dog extends Animal{
+//     constructor(name,age,breed){
+//         super(name,age)
+//         this.breed = breed
+//     }
+//     bark(){
+//         return 'woof'
+//     }
+// }
+
+// class Cat extends Animal{
+//     constructor(name,age,weight){
+//         super(name,age)
+//         this.weight = weight
+//     }
+// }
+
+// const mydog = new Dog('Rex',2,'German Sherpard')
+// console.log(mydog.getInfo());
+// console.log(mydog.breed);
+// console.log(mydog.bark());
+
+// const myCat = new Cat('Whiskers',5,'5kg');
+// console.log(myCat.getInfo());
+// console.log(myCat.weight);
+
+
+// class Cat extends Animal{
+//     #weight;
+//     constructor(name,age,weight){
+//         super(name,age)
+//         this.#weight = weight
+//     }
+
+//     getWeight(){
+//         return this.#weight
+//     }
+//     setWeight(weight){
+//         this.#weight = weight
+//     }
+// }
+
+// const myCat = new Cat('Whiskers',5,'5kg')
+// console.log(myCat.getWeight());
+// myCat.setWeight('6kg')
+// console.log(myCat.getWeight());
+
+
+// const sym1 = Symbol();
+// const sym2 = Symbol("2");
+// const sym3 = Symbol('2');
+// console.log(sym2===sym3);
+
+// let num = 10;
+
+// let obj = {};
+// console.log(num ===Object(num)); false
+// console.log(obj === Object(obj)); true
+
+
+// sayHello();
+// function sayHello(){
+//     console.log("HELLO<WOrld!");
+    
+// }
+
+
+
+
+// function performTask(){
+//     result = 100;
+//     console.log(result);
+//     var result;
+    
+// }
+// performTask()
+
+const obj = {}
+console.log(obj.length);
+
+
